@@ -1,0 +1,32 @@
+enter=input('enter a word')
+word=str(enter)
+print(word[::-1])
+
+
+inp=input('sentence')
+inplist=list(inp.split())
+i=0
+long=len(inplist)-1
+ans=''
+for i in range(long+1):
+    ans=ans+' '+str(inplist[long])
+    long-=1
+print(ans)
+
+
+enter=input('enter a number')
+ans=''
+for i in range(1,int(enter)):
+    if i%3==0 or i%5==0:
+        if i %15==0:
+            ans=ans+','+str(i)
+
+    else:
+        ans=ans+','+str(i)
+        
+print(str(ans)[1:])
+
+
+因為標示都是錯的，表示混合的一定是鉛筆或原子筆的其中一種。所以我一開始選混合的，他若是鉛筆，表示標籤是鉛筆的就是原子筆，標籤是原子筆的實際上是混合;若混合裡面是原子筆，表示標籤是原子筆的是鉛筆，標籤是鉛筆的是混合。
+
+服務生私吞的錢已經包含在遊客付的270裡面了，所以應該算的是店裡老闆收750+服務生偷拿60+要退給遊客的90=900
